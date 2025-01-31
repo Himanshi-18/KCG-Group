@@ -6,6 +6,9 @@ import Footer from "./Components/Footer";
 import SectionOne from "./Components/SectionOne";
 import BrandsBanner from "./Components/BrandsBanner";
 import Enterprise from "./Components/Enterprise";
+import SectionSix from "./Components/SectionSix";
+import SectionSeven from "./Components/SectionSeven";
+import SectionNine from "./Components/SectionNine";
 
 function App() {
   return (
@@ -18,6 +21,9 @@ function App() {
       <SectionOne/>
       <BrandsBanner/>
       <Enterprise/>
+      <SectionSix/>
+      <SectionSeven/>
+      <SectionNine/>
       <Footer/>
     </>
   );

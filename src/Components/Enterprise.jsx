@@ -9,12 +9,13 @@ const Enterprise = () => {
   return (
     <Box>
       <Container sx={{ padding: "100px 0" }}>
-        <Grid container spacing={2}>
+        <Grid container spacing={2} sx={{alignItems: "center"}}>
           <Grid xs={6}>
             <ImageComponent
               src="https://www.zohowebstatic.com/sites/zweb/images/zoho_general_pages/zh-enterprise-illus.svg"
               alt="Enterprise image"
-              width="100%"
+              width="525px"
+              height="305"
             />
             <Box
               sx={{
@@ -35,28 +36,29 @@ const Enterprise = () => {
               <FaQuoteLeft />
             </Box>
 
-            <Box sx={{ display: "flex", padding: "0 0 30px 60px" }}>
+            <Box sx={{ display: "flex", padding: "0 0 30px 60px"}}>
               <Box>
                 <Typography
                   variant="p"
-                  sx={{ fontSize: "1.5rem", lineHeight: "1.5" }}
+                  sx={{ fontSize: "1.3rem", lineHeight: "1.5" }}
                 >
                   "With our complete business under control, our productivity is
                   up by 80% in the last year that we have been using Zoho."
                 </Typography>
-                <Typography sx={{ fontSize: "1.25rem", fontWeight: "600" }}>
-                  Thomas John
-                </Typography>
-                <Typography
-                  sx={{
-                    paddingTop: "2rem",
-                    paddingBottom: "2rem",
-                    fontSize: "1.12rem",
-                    lineHeight: "1.7",
-                  }}
-                >
-                  Managing Director, Agappe Diagnostics
-                </Typography>
+
+                <Box sx={{marginTop: "2rem"}}>
+                  <Typography sx={{ fontSize: "1.25rem", fontWeight: "600" }}>
+                    Thomas John
+                  </Typography>
+                  <Typography
+                    sx={{
+                      fontSize: "1.12rem",
+                      lineHeight: "1.7",
+                    }}
+                  >
+                    Managing Director, Agappe Diagnostics
+                  </Typography>
+                </Box>
               </Box>
 
               <Box sx={{ width: "100%" }}>
@@ -68,7 +70,11 @@ const Enterprise = () => {
                   height="8rem"
                 />
                 <Box>
-                  <Link href="#" underline="none" sx={{ fontSize: "0.95rem" }}>
+                  <Link
+                    href="#"
+                    underline="none"
+                    sx={{ fontSize: "0.8rem", fontWeight: "600" }}
+                  >
                     READ THE STORY <RiArrowRightSLine />
                   </Link>
                 </Box>
@@ -76,19 +82,21 @@ const Enterprise = () => {
             </Box>
           </Grid>
 
-          <Grid xs={6} sx={{ display: "flex", flexFlow: "column" }}>
-            <Box sx={{ width: "90%", marginLeft: "20%" }}>
+          <Grid xs={6} sx={{paddingLeft: "60px", width: "50%"}}>
+            <Box>
               <ImageComponent
                 src="https://www.zohowebstatic.com/sites/zweb/images/producticon/enterprise-en-in.svg"
                 alt="Enterprise image"
-                width="100%"
+                width="200px"
+                height="5%"
               />
               <Typography
-                variant="p"
                 sx={{
-                  fontSize: "1.5rem",
+                  paddingTop: "1rem",
+                  paddingBottom: "1.5rem",
+                  fontSize: "1.2rem",
                   fontWeight: "100",
-                  lineHeight: "1.4",
+                  lineHeight: "1.7",
                 }}
               >
                 Experience the breadth and depth of the Zoho ecosystem, with the
@@ -98,8 +106,8 @@ const Enterprise = () => {
                 drive growth at scale.
               </Typography>
               <Button
-                backgroundColor="#f60014"
-                text="TRY NOW"
+                backgroundColor="#056cb8"
+                text="LEARN MORE"
                 icon={<RiArrowRightSLine />}
               />
             </Box>
